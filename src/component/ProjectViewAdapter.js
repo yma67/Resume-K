@@ -13,17 +13,15 @@ class ProjectViewAdapter extends Component {
         );
         this.state = {load: true};
     }
-    componentWillMount() {
+
+    componentDidMount() {
         if (this.project) {
             fetch(this.project.rdme)
                 .then((res) => res.text())
                 .then((md) => {
-                    this.setState({ terms: md })
+                    this.setState({ terms: md,load: false })
                 })
         }
-    }
-    componentDidMount() {
-        this.setState({load: false})
     }
     render() {
         if (!this.project) {
@@ -42,7 +40,6 @@ class ProjectViewAdapter extends Component {
                         {this.project.name}
                             <Button as={Link} floated='right' color={'red'} to={'/project'}>Back</Button>
                     </h1>
-
                     <h4>
                         {this.project.dateRange}
                     </h4>

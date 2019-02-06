@@ -3,12 +3,19 @@ import {Card, Dimmer, Divider, Header, Icon, Image, Loader} from "semantic-ui-re
 import Work from "../model/Work";
 
 export default class work extends Component {
-    state = { activeItem: 'Work Experience' };
-    handleItemClick = (e, { name }) => this.setState({ activeItem: name });
+    constructor(props) {
+        super(props);
+        this.state = {load: true}
+    }
+    handleImageLoad() {
+        this.setState({load: false});
+    }
     render() {
-        const { activeItem } = this.state;
         return (
             <div>
+                <Dimmer active={this.state.load} inverted>
+                    <Loader inverted>Loading</Loader>
+                </Dimmer>
                 <br />
                 <Header as='h3'>
                     <Icon name='code' />
@@ -20,7 +27,7 @@ export default class work extends Component {
                         Work.all().map(p => (
                             <Card key={p.wid} color='red' fluid ui disabled loader>
                                 <Card.Content>
-                                    <Image floated='right' size='mini' src={p.imgsrc} />
+                                    <Image floated='right' size='mini' onLoad={this.handleImageLoad.bind(this)} src={p.imgsrc} />
                                     <Card.Header>{p.title}</Card.Header>
                                     <Card.Meta>{p.institute} {p.timeRange}</Card.Meta>
                                     <Card.Description>
