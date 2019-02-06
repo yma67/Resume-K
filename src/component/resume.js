@@ -104,7 +104,7 @@ export default class Resume extends Component {
         super(props);
         this.state = {load: true};
     }
-    componentDidMount() {
+    componentDidUpdate() {
         this.setState({load: false});
     }
     render() {
@@ -144,14 +144,13 @@ export default class Resume extends Component {
                         <Header.Content>Like</Header.Content>
                     </Header>
                     <Card.Group>
-
+                        <Dimmer active={this.state.load} inverted>
+                            <Loader inverted>Loading</Loader>
+                        </Dimmer>
                         {
                             Hobby.all().map(p => (
-                                <Dimmer active={this.state.load} inverted>
-                                    <Loader inverted>Loading</Loader>
-                                    <Card key={p.hid} href={p.knowledgeSrc} image={p.imgsrc} header={p.title} meta={p.meta} description={p.description} color='yellow'>
-                                    </Card>
-                                </Dimmer>
+                                <Card key={p.hid} href={p.knowledgeSrc} image={p.imgsrc} header={p.title} meta={p.meta} description={p.description} color='yellow'>
+                                </Card>
                             ))
                         }
                     </Card.Group>
