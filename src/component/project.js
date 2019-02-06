@@ -35,12 +35,6 @@ export default class Project extends Component {
                             href={'/workexp'}
                             onClick={this.handleItemClick}
                         />
-                        <div className="right menu Resume-Label">
-                            <Label as={'a'} color={'red'} href={'/'} image>
-                                <img src={hand} />
-                                川剧变脸
-                            </Label>
-                        </div>
                     </Menu>
                         </header>
                 <br />

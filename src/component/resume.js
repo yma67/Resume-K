@@ -37,16 +37,15 @@ export default class Resume extends Component {
                             href={'/workexp'}
                             onClick={this.handleItemClick}
                         />
-                        <div className="right menu Resume-Label">
-                            <Label as={'a'} color={'red'} href={'/'} image>
-                                <img src={hand} />
+                        <Menu.Menu position='right'>
+                            <Menu.Item
+                                name='logout'
+                                active={activeItem === 'logout'}
+                                onClick={this.handleItemClick}>
                                 川剧变脸
-                            </Label>
-                        </div>
+                            </Menu.Item>
+                        </Menu.Menu>
                     </Menu>
-
-
-
                 </ header>
                 <br />
                 <Header as='h3'>
