@@ -1,13 +1,11 @@
 import React, {Component} from 'react';
 import Education from '../model/Education'
 import Hobby from '../model/Hobby'
-import {Menu, Card, Header, Icon, Image, Divider, Loader, Dimmer} from 'semantic-ui-react';
+import {Menu, Card, Header, Icon, Image, Divider, Loader, Dimmer, Dropdown} from 'semantic-ui-react';
 import McGillIcon from './McGill_University_CoA.svg'
 import hand from './hand.png'
 import {Link} from "react-router-dom";
-import ProjectRouter from "../ProjectRouter";
 import ResumeRouter from "../ResumeRouter";
-import SignleProject from "../model/SingleProject";
 export class General extends Component {
 
     constructor(props) {
@@ -19,13 +17,28 @@ export class General extends Component {
             prim = prim + urlPrev.charAt(i);
         }
         if (prim === 'resume') {
-            this.state = { activeItem: 'Chris Li'};
+            this.state = { activeItem: 'Chris Li', width: 0, height: 0};
         } else if (prim === 'project') {
-            this.state = { activeItem: 'Project'};
+            this.state = { activeItem: 'Project', width: 0, height: 0};
         } else {
-            this.state = { activeItem: 'Work Experience'};
+            this.state = { activeItem: 'Work Experience', width: 0, height: 0};
         }
+        this.updateWindowDimensions = this.updateWindowDimensions.bind(this);
     }
+
+    componentDidMount() {
+        this.updateWindowDimensions();
+        window.addEventListener('resize', this.updateWindowDimensions);
+    }
+
+    componentWillUnmount() {
+        window.removeEventListener('resize', this.updateWindowDimensions);
+    }
+
+    updateWindowDimensions() {
+        this.setState({ width: window.innerWidth, height: window.innerHeight });
+    }
+
     handleItemClick = (e, { name }) => this.setState(name);
 
     getTab = () => {
@@ -48,55 +61,90 @@ export class General extends Component {
     handleItemClick = (e, { name }) => this.setState({ activeItem: name });
     render() {
         const { activeItem } = this.state;
-        return (
-            <div className="Resume-header">
-                <header>
-                    <Menu secondary>
-                        <Menu.Item
-                            href={'/'}
-                            active={false}
-                            inverted
-                            onClick={this.handleItemClick}
-                        >
-                            <img src={hand} />
-                        </Menu.Item>
-                        <Menu.Item
-                            name='Chris Li'
-                            color='red'
-                            active={activeItem === 'Chris Li'}
-                            as={Link}
-                            to='/resume'
-                            onClick={this.handleItemClick}>
-                        </Menu.Item>
-
-                        <Menu.Item
-                            name='Project'
-                            active={activeItem === 'Project'}
-                            color='red'
-                            as={Link}
-                            to='/project'
-                            onClick={this.handleItemClick}
-                        />
-                        <Menu.Item
-                            name='Work Experience'
-                            active={activeItem === 'Work Experience'}
-                            color='red'
-                            as={Link}
-                            to='/workexp'
-                            onClick={this.handleItemClick}
-                        />
-                    </Menu>
-                </ header>
-                <ResumeRouter />
-                <div className={'Resume-Footer'}>
-                    <Divider horizontal footer className={'Resume-Footer'}>
-                        <Header as='h4' >
-                            <code><Icon name='heart' color={'red'} />yma67 @t09</code>
-                        </Header>
-                    </Divider>
+        if (this.state.width/this.state.height < 0.62) {
+            return (
+                <div className="Resume-header">
+                    <header>
+                        <Menu secondary>
+                            <Menu.Item
+                                href={'/'}
+                                active={false}
+                                inverted
+                                onClick={this.handleItemClick}
+                            >
+                                <img src={hand} />
+                            </Menu.Item>
+                            <Dropdown item text='Chris Li'>
+                                <Dropdown.Menu>
+                                    <Dropdown.Item href={'/resume'}>Resume</Dropdown.Item>
+                                    <Dropdown.Item href={'/project'}>Project</Dropdown.Item>
+                                    <Dropdown.Item href={'/workexp'}>Work Experience</Dropdown.Item>
+                                </Dropdown.Menu>
+                            </Dropdown>
+                        </Menu>
+                    </ header>
+                    <ResumeRouter />
+                    <div className={'Resume-Footer'}>
+                        <Divider horizontal footer className={'Resume-Footer'}>
+                            <Header as='h4' >
+                                <code><Icon name='heart' color={'red'} />yma67 @t09</code>
+                            </Header>
+                        </Divider>
+                    </div>
                 </div>
-            </div>
-        );
+            );
+        } else {
+            return (
+                <div className="Resume-header">
+                    <header>
+                        <Menu secondary>
+                            <Menu.Item
+                                href={'/'}
+                                active={false}
+                                inverted
+                                onClick={this.handleItemClick}
+                            >
+                                <img src={hand} />
+                            </Menu.Item>
+                            <Menu.Item
+                                name='Chris Li'
+                                color='red'
+                                active={activeItem === 'Chris Li'}
+                                as={Link}
+                                to='/resume'
+                                onClick={this.handleItemClick}>
+                                <b>Chris Li</b>
+                            </Menu.Item>
+
+                            <Menu.Item
+                                name='Project'
+                                active={activeItem === 'Project'}
+                                color='red'
+                                as={Link}
+                                to='/project'
+                                onClick={this.handleItemClick}
+                            />
+                            <Menu.Item
+                                name='Work Experience'
+                                active={activeItem === 'Work Experience'}
+                                color='red'
+                                as={Link}
+                                to='/workexp'
+                                onClick={this.handleItemClick}
+                            />
+                        </Menu>
+                    </ header>
+                    <ResumeRouter />
+                    <div className={'Resume-Footer'}>
+                        <Divider horizontal footer className={'Resume-Footer'}>
+                            <Header as='h4' >
+                                <code><Icon name='heart' color={'red'} />yma67 @t09</code>
+                            </Header>
+                        </Divider>
+                    </div>
+                </div>
+            );
+        }
     }
 }
 export default class Resume extends Component {
@@ -110,7 +158,6 @@ export default class Resume extends Component {
     render() {
         return (
             <div>
-                <br />
                 <br />
                 <div>
                     <Dimmer active={this.state.load} inverted>
@@ -146,14 +193,16 @@ export default class Resume extends Component {
                         <Icon name='heart' />
                         <Header.Content>Like</Header.Content>
                     </Header>
-                    <Card.Group>
-                        {
-                            Hobby.all().map(p => (
-                                <Card key={p.hid} href={p.knowledgeSrc} image={p.imgsrc} onLoad={this.handleImageLoad.bind(this)} header={p.title} meta={p.meta} description={p.description} color='yellow'>
-                                </Card>
-                            ))
-                        }
-                    </Card.Group>
+
+                        <Card.Group centered>
+                            {
+                                Hobby.all().map(p => (
+                                    <Card key={p.hid} href={p.knowledgeSrc} image={p.imgsrc} onLoad={this.handleImageLoad.bind(this)} header={p.title} meta={p.meta} description={p.description} color='yellow'>
+                                    </Card>
+                                ))
+                            }
+                        </Card.Group>
+
                 </div>
                 </div>
 

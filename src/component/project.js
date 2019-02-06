@@ -21,7 +21,7 @@ export default class Project extends Component {
                     <Header.Content>King of Following Groups</Header.Content>
                 </Header>
                 <br />
-                <Card.Group>
+                <Card.Group centered>
                     {
                         SingleProject.all().map(p => (
                             <Card key={p.number} image={p.imgsrc} as={Link} onLoad={this.handleImageLoad.bind(this)} color='red' header={p.name} meta={p.dateRange} description={p.description} ui disabled loader to={`/project/${p.number}`}>

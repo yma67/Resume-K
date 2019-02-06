@@ -3,7 +3,6 @@ import SignleProject from '../model/SingleProject'
 import {Dimmer, Divider, Grid, Header, Icon, Loader, Menu, Placeholder, Segment} from "semantic-ui-react";
 import {Label, Button} from "semantic-ui-react";
 import ReactMarkdown from 'react-markdown'
-import hand from "./hand.png";
 import {Link} from "react-router-dom";
 class ProjectViewAdapter extends Component {
     constructor(props) {

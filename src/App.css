@@ -18,10 +18,14 @@
   color: white;
 }
 .Resume-header {
+  align-items: center;
   background-color: #FFFFFF; /* #282c34 */
   display: flex;
   flex-direction: column;
   margin: 1% 8%;
+}
+.Resume-Content {
+  align-items: center;
 }
 .Readme-content {
   margin: 5% 5%;
