@@ -27,7 +27,7 @@ class ProjectViewAdapter extends Component {
                 <div>
                     <div className="Resume-header">
                         <header>
-                            <Menu pointing secondary size={'massive'}>
+                            <Menu secondary>
                                 <Menu.Item
                                     name='Chris Li'
                                     color='red'
@@ -68,7 +68,7 @@ class ProjectViewAdapter extends Component {
                 <div>
                     <div className="Resume-header">
                         <header>
-                            <Menu pointing secondary size={'massive'}>
+                            <Menu secondary>
                                 <Menu.Item
                                     name='Chris Li'
                                     color='red'
@@ -90,11 +90,13 @@ class ProjectViewAdapter extends Component {
                                     href={'/workexp'}
                                 />
                                 <div className="right menu Resume-Label">
-                                    <Label as={'a'} size='big' color={'red'} href={'/'} image>
+                                    <Label as={'a'} color={'red'} href={'/'} image>
                                         <img src={hand} />
-                                        川剧变脸<Label.Detail>组皇职业照</Label.Detail>
+                                        川剧变脸
                                     </Label>
-                                    <Button color='red' href='/project'>Back</Button>
+                                    <Label as={'a'} color={'red'} href={'/project'} image>
+                                        Back
+                                    </Label>
                                 </div>
                             </Menu>
                         </header>

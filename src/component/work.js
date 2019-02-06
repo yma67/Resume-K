@@ -13,7 +13,7 @@ export default class work extends Component {
         return (
             <div className="Resume-header">
                 <header>
-                    <Menu pointing secondary size={'massive'}>
+                    <Menu secondary>
                         <Menu.Item
                             name='Chris Li'
                             color='red'
@@ -37,9 +37,9 @@ export default class work extends Component {
                             onClick={this.handleItemClick}
                         />
                         <div className="right menu Resume-Label">
-                            <Label as={'a'} size='big' color={'red'} href={'/'} image>
+                            <Label as={'a'} color={'red'} href={'/'} image>
                                 <img src={hand} />
-                                川剧变脸<Label.Detail>组皇职业照</Label.Detail>
+                                川剧变脸
                             </Label>
                         </div>
                     </Menu>

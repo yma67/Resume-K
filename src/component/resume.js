@@ -14,7 +14,7 @@ export default class Resume extends Component {
         return (
             <div className="Resume-header">
                 <header>
-                    <Menu pointing secondary size={'massive'}>
+                    <Menu secondary>
                         <Menu.Item
                             name='Chris Li'
                             color='red'
@@ -38,9 +38,9 @@ export default class Resume extends Component {
                             onClick={this.handleItemClick}
                         />
                         <div className="right menu Resume-Label">
-                            <Label as={'a'} size='big' color={'red'} href={'/'} image>
+                            <Label as={'a'} color={'red'} href={'/'} image>
                                 <img src={hand} />
-                                川剧变脸<Label.Detail>组皇职业照</Label.Detail>
+                                川剧变脸
                             </Label>
                         </div>
                     </Menu>
@@ -79,7 +79,7 @@ export default class Resume extends Component {
                     <Icon name='heart' />
                     <Header.Content>Like</Header.Content>
                 </Header>
-                <Card.Group itemsPerRow={3}>
+                <Card.Group>
                     {
                         Hobby.all().map(p => (
                             <Card key={p.hid} image={p.imgsrc} header={p.title} meta={p.meta} description={p.description} color='yellow'>

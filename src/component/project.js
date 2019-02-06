@@ -12,7 +12,7 @@ export default class Project extends Component {
         return(
             <div className="Resume-header">
                 <header>
-                    <Menu pointing secondary size={'massive'}>
+                    <Menu secondary>
                         <Menu.Item
                             name='Chris Li'
                             color='red'
@@ -36,9 +36,9 @@ export default class Project extends Component {
                             onClick={this.handleItemClick}
                         />
                         <div className="right menu Resume-Label">
-                            <Label as={'a'} size='big' color={'red'} href={'/'} image>
+                            <Label as={'a'} color={'red'} href={'/'} image>
                                 <img src={hand} />
-                                川剧变脸<Label.Detail>组皇职业照</Label.Detail>
+                                川剧变脸
                             </Label>
                         </div>
                     </Menu>
@@ -49,7 +49,7 @@ export default class Project extends Component {
                     <Header.Content>King of Following Groups</Header.Content>
                 </Header>
                 <br />
-                <Card.Group itemsPerRow={3}>
+                <Card.Group>
                     {
                         SingleProject.all().map(p => (
                             <Card key={p.number} image={p.imgsrc} color='red' header={p.name} meta={p.dateRange} description={p.description} ui disabled loader href={`/project/${p.number}`}>
