@@ -1,6 +1,9 @@
 import React, {Component} from 'react';
 import { Button } from 'semantic-ui-react'
 import sml from "./sml.png";
+import {Link} from "react-router-dom";
+import ResumeRouter from "../ResumeRouter";
+import ProjectRouter from "../ProjectRouter";
 
 export default class Simalian extends Component{
     render() {
@@ -20,7 +23,8 @@ export default class Simalian extends Component{
                         {favoratesOfKing[rand(0, favoratesOfKing.length - 1)]}
                     </p>
                     <br />
-                    <Button inverted color={'black'} href="/resume"><code>bossli.io</code></Button>
+                    <Button as={Link} inverted color={'black'} to={'/resume'}><code>bossli.io</code></Button>
+                    <ProjectRouter/>
                 </header>
             </div>
         );
