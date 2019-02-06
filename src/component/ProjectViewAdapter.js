@@ -13,8 +13,7 @@ class ProjectViewAdapter extends Component {
         );
         this.state = {load: true};
     }
-
-    componentDidMount() {
+    componentWillMount() {
         if (this.project) {
             fetch(this.project.rdme)
                 .then((res) => res.text())
@@ -22,6 +21,8 @@ class ProjectViewAdapter extends Component {
                     this.setState({ terms: md })
                 })
         }
+    }
+    componentDidMount() {
         this.setState({load: false})
     }
     render() {

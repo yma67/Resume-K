@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import Education from '../model/Education'
 import Hobby from '../model/Hobby'
-import {Menu, Card, Header, Icon, Image, Divider} from 'semantic-ui-react';
+import {Menu, Card, Header, Icon, Image, Divider, Loader, Dimmer} from 'semantic-ui-react';
 import McGillIcon from './McGill_University_CoA.svg'
 import hand from './hand.png'
 import {Link} from "react-router-dom";
@@ -100,6 +100,13 @@ export class General extends Component {
     }
 }
 export default class Resume extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {load: true};
+    }
+    componentDidMount() {
+        this.setState({load: false}); 
+    }
     render() {
         return (
             <div>
@@ -137,6 +144,9 @@ export default class Resume extends Component {
                         <Header.Content>Like</Header.Content>
                     </Header>
                     <Card.Group>
+                        <Dimmer active={this.state.load} inverted>
+                            <Loader inverted>Loading</Loader>
+                        </Dimmer>
                         {
                             Hobby.all().map(p => (
                                 <Card key={p.hid} href={p.knowledgeSrc} image={p.imgsrc} header={p.title} meta={p.meta} description={p.description} color='yellow'>
