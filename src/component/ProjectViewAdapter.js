@@ -1,6 +1,6 @@
 import React, {Component} from 'react'
 import SignleProject from '../model/SingleProject'
-import {Divider, Grid, Header, Icon, Menu, Segment} from "semantic-ui-react";
+import {Dimmer, Divider, Grid, Header, Icon, Loader, Menu, Placeholder, Segment} from "semantic-ui-react";
 import {Label, Button} from "semantic-ui-react";
 import ReactMarkdown from 'react-markdown'
 import hand from "./hand.png";
@@ -8,10 +8,10 @@ import {Link} from "react-router-dom";
 class ProjectViewAdapter extends Component {
     constructor(props) {
         super(props);
-        this.state = { terms: null };
         this.project = SignleProject.get(
             parseInt(this.props.match.params.number, 10)
         );
+        this.state = {load: true};
     }
     componentWillMount() {
         if (this.project) {
@@ -22,6 +22,10 @@ class ProjectViewAdapter extends Component {
                 })
         }
     }
+
+    componentDidMount() {
+        this.setState({load: false})
+    }
     render() {
         if (!this.project) {
             return (
@@ -31,6 +35,56 @@ class ProjectViewAdapter extends Component {
                     </h1>
                 </div>
             )
+        } else if (this.state.load) {
+            return (
+                <div>
+                    <br />
+                    <h1>
+                        {this.project.name}
+                        <Button as={Link} floated='right' color={'red'} to={'/project'}>Back</Button>
+                    </h1>
+
+                    <h4>
+                        {this.project.dateRange}
+                    </h4>
+                    <br />
+                    <Grid columns={1}>
+                        <Grid.Column>
+                            <Segment raised>
+                                <Label as='a' color='blue' href={this.project.github} ribbon>
+                                    <code>GitHub <Icon name={'github'}/></code>
+                                </Label>
+                                <br />
+                                <br />
+                                <Label as='a' color='red' ribbon>
+                                    <code>README.md</code>
+                                </Label>
+                                <div className="Readme-content">
+                                    <Segment>
+                                        <Dimmer active inverted>
+                                            <Loader inverted>Loading</Loader>
+                                        </Dimmer>
+                                        <Placeholder>
+                                            <Placeholder.Paragraph>
+                                                <Placeholder.Line />
+                                                <Placeholder.Line />
+                                                <Placeholder.Line />
+                                                <Placeholder.Line />
+                                                <Placeholder.Line />
+                                            </Placeholder.Paragraph>
+                                            <Placeholder.Paragraph>
+                                                <Placeholder.Line />
+                                                <Placeholder.Line />
+                                                <Placeholder.Line />
+                                            </Placeholder.Paragraph>
+                                        </Placeholder>
+                                    </Segment>
+                                </div>
+                            </Segment>
+                        </Grid.Column>
+                    </Grid>
+                </div>
+            );
         } else {
             return (
                 <div>

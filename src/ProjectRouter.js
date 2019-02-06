@@ -3,6 +3,7 @@ import { Switch, Route } from 'react-router-dom'
 import ProjectViewAdapter from "./component/ProjectViewAdapter";
 import Resume, {General} from "./component/resume";
 import Project from "./component/project";
+import {CSSTransition, TransitionGroup} from "react-transition-group";
 const ProjectRouter = () => (
     <Switch>
         <Route exact path='/project' component={Project} />
