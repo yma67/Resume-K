@@ -3,7 +3,6 @@ import Education from '../model/Education'
 import Hobby from '../model/Hobby'
 import {Menu, Card, Header, Icon, Image, Label, Divider} from 'semantic-ui-react';
 import McGillIcon from './McGill_University_CoA.svg'
-import hand from "./hand.png";
 export default class Resume extends Component {
     state = { activeItem: 'Chris Li' };
 
