@@ -27,7 +27,15 @@ class ProjectViewAdapter extends Component {
                 <div>
                     <div className="Resume-header">
                         <header>
-                            <Menu secondary>
+                            <Menu secondary size={'small'}>
+                                <Menu.Item
+                                    href={'/'}
+                                    active={false}
+                                    inverted
+                                    onClick={this.handleItemClick}
+                                >
+                                    <img src={hand} />
+                                </Menu.Item>
                                 <Menu.Item
                                     name='Chris Li'
                                     color='red'
@@ -49,10 +57,6 @@ class ProjectViewAdapter extends Component {
                                     href={'/workexp'}
                                 />
                                 <div className="right menu Resume-Label">
-                                    <Label as={'a'} size='big' color={'red'} href={'/'} image>
-                                        <img src={hand} />
-                                        川剧变脸<Label.Detail>组皇职业照</Label.Detail>
-                                    </Label>
                                     <Button color='red' href='/project'>Back</Button>
                                 </div>
                             </Menu>
@@ -69,6 +73,14 @@ class ProjectViewAdapter extends Component {
                     <div className="Resume-header">
                         <header>
                             <Menu secondary>
+                                <Menu.Item
+                                    href={'/'}
+                                    active={false}
+                                    inverted
+                                    onClick={this.handleItemClick}
+                                >
+                                    <img src={hand} />
+                                </Menu.Item>
                                 <Menu.Item
                                     name='Chris Li'
                                     color='red'
@@ -94,18 +106,6 @@ class ProjectViewAdapter extends Component {
                                         href={'/project'}>
                                         <Button color='red'>
                                             Back
-                                        </Button>
-                                    </Menu.Item>
-                                    <Menu.Item
-                                        href={'/'}
-                                        onClick={this.handleItemClick}>
-                                        <Button as='div' labelPosition='right'>
-                                            <Button color='red'>
-                                                川剧变脸
-                                            </Button>
-                                            <Label as='a' basic color='red' pointing='left'>
-                                                组皇职业照
-                                            </Label>
                                         </Button>
                                     </Menu.Item>
                                 </Menu.Menu>

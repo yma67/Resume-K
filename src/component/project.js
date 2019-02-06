@@ -14,6 +14,14 @@ export default class Project extends Component {
                 <header>
                     <Menu secondary>
                         <Menu.Item
+                            href={'/'}
+                            active={false}
+                            inverted
+                            onClick={this.handleItemClick}
+                        >
+                            <img src={hand} />
+                        </Menu.Item>
+                        <Menu.Item
                             name='Chris Li'
                             color='red'
                             active={activeItem === 'Chris Li'}
@@ -35,20 +43,6 @@ export default class Project extends Component {
                             href={'/workexp'}
                             onClick={this.handleItemClick}
                         />
-                        <Menu.Menu position='right'>
-                            <Menu.Item
-                                href={'/'}
-                                onClick={this.handleItemClick}>
-                                <Button as='div' labelPosition='right'>
-                                    <Button color='red'>
-                                        川剧变脸
-                                    </Button>
-                                    <Label as='a' basic color='red' pointing='left'>
-                                        组皇职业照
-                                    </Label>
-                                </Button>
-                            </Menu.Item>
-                        </Menu.Menu>
                     </Menu>
                         </header>
                 <br />

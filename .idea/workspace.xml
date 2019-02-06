@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a66ed075-44a1-477f-8e78-836c85a2bef3" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/component/ProjectViewAdapter.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/ProjectViewAdapter.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/component/hand.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/hand.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/component/project.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/project.js" afterDir="false" />
@@ -55,8 +56,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/component/project.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="387">
-              <caret line="50" column="36" selection-start-line="50" selection-start-column="36" selection-end-line="50" selection-end-column="36" />
+            <state relative-caret-position="318">
+              <caret line="22" column="36" selection-start-line="22" selection-start-column="36" selection-end-line="22" selection-end-column="36" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
               </folding>
@@ -67,8 +68,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/component/resume.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="321">
-              <caret line="52" column="36" lean-forward="true" selection-start-line="39" selection-start-column="24" selection-end-line="52" selection-end-column="36" />
+            <state relative-caret-position="104">
+              <caret line="17" column="24" lean-forward="true" selection-start-line="17" selection-start-column="24" selection-end-line="24" selection-end-column="36" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
               </folding>
@@ -79,8 +80,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/component/work.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="387">
-              <caret line="51" column="36" selection-start-line="51" selection-start-column="36" selection-end-line="51" selection-end-column="36" />
+            <state relative-caret-position="65">
+              <caret line="16" column="24" lean-forward="true" selection-start-line="16" selection-start-column="24" selection-end-line="23" selection-end-column="36" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
               </folding>
@@ -91,8 +92,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/component/ProjectViewAdapter.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="93" column="55" selection-start-line="93" selection-start-column="55" selection-end-line="93" selection-end-column="55" />
+            <state relative-caret-position="387">
+              <caret line="82" column="44" selection-start-line="82" selection-start-column="44" selection-end-line="82" selection-end-column="44" />
               <folding>
                 <element signature="e#0#38#0" expanded="true" />
               </folding>
@@ -129,8 +130,8 @@
         <option value="$PROJECT_DIR$/src/App.js" />
         <option value="$PROJECT_DIR$/src/App.css" />
         <option value="$PROJECT_DIR$/src/component/resume.js" />
-        <option value="$PROJECT_DIR$/src/component/project.js" />
         <option value="$PROJECT_DIR$/src/component/work.js" />
+        <option value="$PROJECT_DIR$/src/component/project.js" />
         <option value="$PROJECT_DIR$/src/component/ProjectViewAdapter.js" />
       </list>
     </option>
@@ -236,7 +237,7 @@
       <workItem from="1549385890625" duration="4073000" />
       <workItem from="1549403391252" duration="618000" />
       <workItem from="1549417924253" duration="306000" />
-      <workItem from="1549451504423" duration="3796000" />
+      <workItem from="1549451504423" duration="4939000" />
     </task>
     <task id="LOCAL-00001" summary="礼物完成!!!">
       <created>1549389571440</created>
@@ -280,11 +281,18 @@
       <option name="project" value="LOCAL" />
       <updated>1549454824739</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="移动端适配">
+      <created>1549455724867</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1549455724867</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="41721000" />
+    <option name="totallyTimeSpent" value="42864000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1039" height="825" extended-state="0" />
@@ -480,8 +488,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/component/resume.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="321">
-          <caret line="52" column="36" lean-forward="true" selection-start-line="39" selection-start-column="24" selection-end-line="52" selection-end-column="36" />
+        <state relative-caret-position="104">
+          <caret line="17" column="24" lean-forward="true" selection-start-line="17" selection-start-column="24" selection-end-line="24" selection-end-column="36" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
           </folding>
@@ -490,8 +498,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/component/project.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="387">
-          <caret line="50" column="36" selection-start-line="50" selection-start-column="36" selection-end-line="50" selection-end-column="36" />
+        <state relative-caret-position="318">
+          <caret line="22" column="36" selection-start-line="22" selection-start-column="36" selection-end-line="22" selection-end-column="36" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
           </folding>
@@ -500,8 +508,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/component/work.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="387">
-          <caret line="51" column="36" selection-start-line="51" selection-start-column="36" selection-end-line="51" selection-end-column="36" />
+        <state relative-caret-position="65">
+          <caret line="16" column="24" lean-forward="true" selection-start-line="16" selection-start-column="24" selection-end-line="23" selection-end-column="36" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
           </folding>
@@ -510,8 +518,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/component/ProjectViewAdapter.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="93" column="55" selection-start-line="93" selection-start-column="55" selection-end-line="93" selection-end-column="55" />
+        <state relative-caret-position="387">
+          <caret line="82" column="44" selection-start-line="82" selection-start-column="44" selection-end-line="82" selection-end-column="44" />
           <folding>
             <element signature="e#0#38#0" expanded="true" />
           </folding>
