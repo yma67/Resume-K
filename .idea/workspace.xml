@@ -3,9 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="a66ed075-44a1-477f-8e78-836c85a2bef3" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/ProjectViewAdapter.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/ProjectViewAdapter.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/component/resume.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/resume.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/work.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/work.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -81,8 +79,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/component/resume.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="107" column="38" lean-forward="true" selection-start-line="107" selection-start-column="38" selection-end-line="107" selection-end-column="38" />
+            <state relative-caret-position="440">
+              <caret line="117" column="29" selection-start-line="117" selection-start-column="29" selection-end-line="117" selection-end-column="29" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
               </folding>
@@ -264,7 +262,7 @@
       <workItem from="1549403391252" duration="618000" />
       <workItem from="1549417924253" duration="306000" />
       <workItem from="1549451504423" duration="12597000" />
-      <workItem from="1549469529972" duration="3677000" />
+      <workItem from="1549469529972" duration="4737000" />
     </task>
     <task id="LOCAL-00001" summary="礼物完成!!!">
       <created>1549389571440</created>
@@ -343,11 +341,32 @@
       <option name="project" value="LOCAL" />
       <updated>1549480454481</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="优化了页面切换">
+      <created>1549481419173</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1549481419174</updated>
+    </task>
+    <task id="LOCAL-00013" summary="优化了页面切换">
+      <created>1549481619121</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1549481619121</updated>
+    </task>
+    <task id="LOCAL-00014" summary="优化了页面切换">
+      <created>1549481869672</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1549481869672</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="54199000" />
+    <option name="totallyTimeSpent" value="55259000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1406" height="825" extended-state="0" />
@@ -584,8 +603,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/component/resume.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="107" column="38" lean-forward="true" selection-start-line="107" selection-start-column="38" selection-end-line="107" selection-end-column="38" />
+        <state relative-caret-position="440">
+          <caret line="117" column="29" selection-start-line="117" selection-start-column="29" selection-end-line="117" selection-end-column="29" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
           </folding>

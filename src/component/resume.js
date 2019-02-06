@@ -104,7 +104,7 @@ export default class Resume extends Component {
         super(props);
         this.state = {load: true};
     }
-    componentDidUpdate() {
+    handleImageLoad() {
         this.setState({load: false});
     }
     render() {
@@ -113,6 +113,9 @@ export default class Resume extends Component {
                 <br />
                 <br />
                 <div>
+                    <Dimmer active={this.state.load} inverted>
+                        <Loader inverted>Loading</Loader>
+                    </Dimmer>
                     <Header as='h3'>
                         <Icon name='book' />
                         <Header.Content>Education</Header.Content>
@@ -144,12 +147,9 @@ export default class Resume extends Component {
                         <Header.Content>Like</Header.Content>
                     </Header>
                     <Card.Group>
-                        <Dimmer active={this.state.load} inverted>
-                            <Loader inverted>Loading</Loader>
-                        </Dimmer>
                         {
                             Hobby.all().map(p => (
-                                <Card key={p.hid} href={p.knowledgeSrc} image={p.imgsrc} header={p.title} meta={p.meta} description={p.description} color='yellow'>
+                                <Card key={p.hid} href={p.knowledgeSrc} image={p.imgsrc} onLoad={this.handleImageLoad.bind(this)} header={p.title} meta={p.meta} description={p.description} color='yellow'>
                                 </Card>
                             ))
                         }
