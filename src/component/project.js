@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {Menu, Card, Header, Icon, Label, Divider} from 'semantic-ui-react';
+import {Menu, Card, Header, Icon, Label, Divider, Button} from 'semantic-ui-react';
 import hand from "./hand.png";
 import SingleProject from '../model/SingleProject'
 export default class Project extends Component {
@@ -35,6 +35,20 @@ export default class Project extends Component {
                             href={'/workexp'}
                             onClick={this.handleItemClick}
                         />
+                        <Menu.Menu position='right'>
+                            <Menu.Item
+                                href={'/'}
+                                onClick={this.handleItemClick}>
+                                <Button as='div' labelPosition='right'>
+                                    <Button color='red'>
+                                        川剧变脸
+                                    </Button>
+                                    <Label as='a' basic color='red' pointing='left'>
+                                        组皇职业照
+                                    </Label>
+                                </Button>
+                            </Menu.Item>
+                        </Menu.Menu>
                     </Menu>
                         </header>
                 <br />

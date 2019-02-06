@@ -1,8 +1,9 @@
 import React, {Component} from 'react';
 import Education from '../model/Education'
 import Hobby from '../model/Hobby'
-import {Menu, Card, Header, Icon, Image, Label, Divider} from 'semantic-ui-react';
+import {Menu, Card, Header, Icon, Image, Label, Divider, Button} from 'semantic-ui-react';
 import McGillIcon from './McGill_University_CoA.svg'
+import hand from './hand.png'
 export default class Resume extends Component {
     state = { activeItem: 'Chris Li' };
 
@@ -38,10 +39,16 @@ export default class Resume extends Component {
                         />
                         <Menu.Menu position='right'>
                             <Menu.Item
-                                name='logout'
-                                active={activeItem === 'logout'}
+                                href={'/'}
                                 onClick={this.handleItemClick}>
-                                川剧变脸
+                                <Button as='div' labelPosition='right'>
+                                    <Button color='red'>
+                                        川剧变脸
+                                    </Button>
+                                    <Label as='a' basic color='red' pointing='left'>
+                                        组皇职业照
+                                    </Label>
+                                </Button>
                             </Menu.Item>
                         </Menu.Menu>
                     </Menu>

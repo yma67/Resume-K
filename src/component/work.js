@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {Menu} from "semantic-ui-react";
+import {Button, Menu} from "semantic-ui-react";
 import {Label} from "semantic-ui-react";
 import hand from "./hand.png";
 import {Card, Divider, Header, Icon, Image} from "semantic-ui-react";
@@ -36,12 +36,20 @@ export default class work extends Component {
                             href={'/workexp'}
                             onClick={this.handleItemClick}
                         />
-                        <div className="right menu Resume-Label">
-                            <Label as={'a'} color={'red'} href={'/'} image>
-                                <img src={hand} />
-                                川剧变脸
-                            </Label>
-                        </div>
+                        <Menu.Menu position='right'>
+                            <Menu.Item
+                                href={'/'}
+                                onClick={this.handleItemClick}>
+                                <Button as='div' labelPosition='right'>
+                                    <Button color='red'>
+                                        川剧变脸
+                                    </Button>
+                                    <Label as='a' basic color='red' pointing='left'>
+                                        组皇职业照
+                                    </Label>
+                                </Button>
+                            </Menu.Item>
+                        </Menu.Menu>
                     </Menu>
                 </ header>
                 <br />

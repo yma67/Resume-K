@@ -89,15 +89,26 @@ class ProjectViewAdapter extends Component {
                                     color='red'
                                     href={'/workexp'}
                                 />
-                                <div className="right menu Resume-Label">
-                                    <Label as={'a'} color={'red'} href={'/'} image>
-                                        <img src={hand} />
-                                        川剧变脸
-                                    </Label>
-                                    <Label as={'a'} color={'red'} href={'/project'} image>
-                                        Back
-                                    </Label>
-                                </div>
+                                <Menu.Menu position='right'>
+                                    <Menu.Item
+                                        href={'/project'}>
+                                        <Button color='red'>
+                                            Back
+                                        </Button>
+                                    </Menu.Item>
+                                    <Menu.Item
+                                        href={'/'}
+                                        onClick={this.handleItemClick}>
+                                        <Button as='div' labelPosition='right'>
+                                            <Button color='red'>
+                                                川剧变脸
+                                            </Button>
+                                            <Label as='a' basic color='red' pointing='left'>
+                                                组皇职业照
+                                            </Label>
+                                        </Button>
+                                    </Menu.Item>
+                                </Menu.Menu>
                             </Menu>
                         </header>
                         <h1>
