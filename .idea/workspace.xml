@@ -1,16 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a66ed075-44a1-477f-8e78-836c85a2bef3" name="Default Changelist" comment="礼物完成!!!">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/ProjectViewAdapter.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/ProjectViewAdapter.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/project.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/project.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/resume.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/resume.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/work.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/work.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/SingleProject.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/SingleProject.js" afterDir="false" />
-    </list>
+    <list default="true" id="a66ed075-44a1-477f-8e78-836c85a2bef3" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -94,8 +85,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/component/ProjectViewAdapter.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="212">
-              <caret line="70" column="43" selection-start-line="70" selection-start-column="43" selection-end-line="70" selection-end-column="43" />
+            <state relative-caret-position="189">
+              <caret line="96" column="81" selection-start-line="96" selection-start-column="81" selection-end-line="96" selection-end-column="81" />
               <folding>
                 <element signature="e#0#38#0" expanded="true" />
               </folding>
@@ -239,7 +230,7 @@
       <workItem from="1549385890625" duration="4073000" />
       <workItem from="1549403391252" duration="618000" />
       <workItem from="1549417924253" duration="306000" />
-      <workItem from="1549451504423" duration="1953000" />
+      <workItem from="1549451504423" duration="2193000" />
     </task>
     <task id="LOCAL-00001" summary="礼物完成!!!">
       <created>1549389571440</created>
@@ -255,15 +246,21 @@
       <option name="project" value="LOCAL" />
       <updated>1549393911388</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="移动端适配">
+      <created>1549453962275</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1549453962276</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="39878000" />
+    <option name="totallyTimeSpent" value="40118000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1039" height="825" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.33824974" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -311,7 +308,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="礼物完成!!!" />
-    <option name="LAST_COMMIT_MESSAGE" value="礼物完成!!!" />
+    <MESSAGE value="移动端适配" />
+    <option name="LAST_COMMIT_MESSAGE" value="移动端适配" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/component/hand.png">
@@ -484,8 +482,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/component/ProjectViewAdapter.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="212">
-          <caret line="70" column="43" selection-start-line="70" selection-start-column="43" selection-end-line="70" selection-end-column="43" />
+        <state relative-caret-position="189">
+          <caret line="96" column="81" selection-start-line="96" selection-start-column="81" selection-end-line="96" selection-end-column="81" />
           <folding>
             <element signature="e#0#38#0" expanded="true" />
           </folding>
