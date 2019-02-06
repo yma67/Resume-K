@@ -13,7 +13,8 @@ class ProjectViewAdapter extends Component {
         );
         this.state = {load: true};
     }
-    componentWillMount() {
+
+    componentDidMount() {
         if (this.project) {
             fetch(this.project.rdme)
                 .then((res) => res.text())
@@ -21,9 +22,6 @@ class ProjectViewAdapter extends Component {
                     this.setState({ terms: md })
                 })
         }
-    }
-
-    componentDidMount() {
         this.setState({load: false})
     }
     render() {
@@ -35,56 +33,6 @@ class ProjectViewAdapter extends Component {
                     </h1>
                 </div>
             )
-        } else if (this.state.load) {
-            return (
-                <div>
-                    <br />
-                    <h1>
-                        {this.project.name}
-                        <Button as={Link} floated='right' color={'red'} to={'/project'}>Back</Button>
-                    </h1>
-
-                    <h4>
-                        {this.project.dateRange}
-                    </h4>
-                    <br />
-                    <Grid columns={1}>
-                        <Grid.Column>
-                            <Segment raised>
-                                <Label as='a' color='blue' href={this.project.github} ribbon>
-                                    <code>GitHub <Icon name={'github'}/></code>
-                                </Label>
-                                <br />
-                                <br />
-                                <Label as='a' color='red' ribbon>
-                                    <code>README.md</code>
-                                </Label>
-                                <div className="Readme-content">
-                                    <Segment>
-                                        <Dimmer active inverted>
-                                            <Loader inverted>Loading</Loader>
-                                        </Dimmer>
-                                        <Placeholder>
-                                            <Placeholder.Paragraph>
-                                                <Placeholder.Line />
-                                                <Placeholder.Line />
-                                                <Placeholder.Line />
-                                                <Placeholder.Line />
-                                                <Placeholder.Line />
-                                            </Placeholder.Paragraph>
-                                            <Placeholder.Paragraph>
-                                                <Placeholder.Line />
-                                                <Placeholder.Line />
-                                                <Placeholder.Line />
-                                            </Placeholder.Paragraph>
-                                        </Placeholder>
-                                    </Segment>
-                                </div>
-                            </Segment>
-                        </Grid.Column>
-                    </Grid>
-                </div>
-            );
         } else {
             return (
                 <div>
@@ -110,6 +58,9 @@ class ProjectViewAdapter extends Component {
                                     <code>README.md</code>
                                 </Label>
                                 <div className="Readme-content">
+                                    <Dimmer active={this.state.load} inverted>
+                                        <Loader inverted>Loading</Loader>
+                                    </Dimmer>
                                     <ReactMarkdown source={this.state.terms} />
                                 </div>
                             </Segment>
