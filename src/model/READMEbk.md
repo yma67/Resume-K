@@ -1,4 +1,4 @@
-# Welcome to TEAM 09 [![Build Status](https://travis-ci.com/ECSE321-Fall2018/t09.svg?token=ft4Mh1yYXz7QX8b1Dzq2&branch=master)](https://travis-ci.com/ECSE321-Fall2018/t09)
+# TEAM 09
 
 ## Driver App Description
 
@@ -6,11 +6,11 @@
 Take a passenger on your next trip to save costs with RideShare9. Sharing is simple with our new App.
 
 ##### HOW SIMPLE?
-##### One Step Sign Up - Sign up in a minute to post an advertisement.
-##### Manage Vehicles in Your Way - Have more than one vehicle registered and update information easily.
-##### Have Multiple Stops - Add more stops to find more passengers
+One Step Sign Up - Sign up in a minute to post an advertisement.
+Manage Vehicles in Your Way - Have more than one vehicle registered and update information easily.
+Have Multiple Stops - Add more stops to find more passengers
 
-#### Driver App Description (Version for Development and Grading)
+#### Driver App Description
 ##### Sign Up
 Users can sign up as a driver through a username and a password on the sign-up page. An error message will be given for an existing username , mismatching passwords or illegal inputs. The sign-up button works only when there is no error. After signing up, the log-in page is displayed.
 ##### Log In
@@ -29,9 +29,9 @@ The home tab is a portal that displays user information and the number of their 
 Enjoy great trips at low prices with RideShare9. Sharing is more simple and efficient with our new App.
 
 ##### HOW SIMPLE?
-##### One Step Sign Up - Sign up in a minute to enjoy your trip.
-##### Find a Trip in Your Way - Browse journey and sort by price, time or stop.
-##### Current Trips and More - See current trips in the home tab and click for a map view.   
+One Step Sign Up - Sign up in a minute to enjoy your trip.
+Find a Trip in Your Way - Browse journey and sort by price, time or stop.
+Current Trips and More - See current trips in the home tab and click for a map view.   
 
 #### Passenger App Description (Version for Development and Grading)
 ##### Sign Up

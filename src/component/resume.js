@@ -7,7 +7,6 @@ import hand from './hand.png'
 import {Link} from "react-router-dom";
 import ResumeRouter from "../ResumeRouter";
 export class General extends Component {
-
     constructor(props) {
         super(props);
         var urlPrev = this.props.location.pathname.slice(1);
@@ -95,6 +94,7 @@ export class General extends Component {
             );
         } else {
             return (
+                <div>
                 <div className="Resume-header">
                     <header>
                         <Menu secondary>
@@ -134,14 +134,15 @@ export class General extends Component {
                             />
                         </Menu>
                     </ header>
+                </div>
                     <ResumeRouter />
-                    <div className={'Resume-Footer'}>
-                        <Divider horizontal footer className={'Resume-Footer'}>
-                            <Header as='h4' >
-                                <code><Icon name='heart' color={'red'} />yma67 @t09</code>
-                            </Header>
-                        </Divider>
-                    </div>
+                <div className={'Resume-Footer'}>
+                    <Divider horizontal footer className={'Resume-Footer'}>
+                        <Header as='h4' >
+                            <code><Icon name='heart' color={'red'} />yma67 @t09</code>
+                        </Header>
+                    </Divider>
+                </div>
                 </div>
             );
         }
@@ -157,17 +158,15 @@ export default class Resume extends Component {
     }
     render() {
         return (
-            <div>
-                <br />
-                <div>
-                    <Dimmer active={this.state.load} inverted>
-                        <Loader inverted>Loading</Loader>
-                    </Dimmer>
-                    <Header as='h3'>
+            <div className={'Resume-Content'} >
+                <Loader inverted>Loading</Loader>
+                    <br />
+                    <Header as='h2'>
                         <Icon name='book' />
                         <Header.Content>Education</Header.Content>
                     </Header>
                     <br />
+
                     <Card.Group>
                         {
                             Education.all().map(p => (
@@ -189,21 +188,28 @@ export default class Resume extends Component {
                         }
                     </Card.Group>
                     <br />
-                    <Header as='h3'>
+                    <Header as='h2'>
                         <Icon name='heart' />
                         <Header.Content>Like</Header.Content>
                     </Header>
+                <Dimmer.Dimmable as={Card.Group} blurring dimmed={this.state.load} >
+                    <Dimmer active={this.state.load} inverted>
+                        <Loader size='massive'>加载中</Loader>
+                    </Dimmer>
 
-                        <Card.Group centered>
-                            {
-                                Hobby.all().map(p => (
-                                    <Card key={p.hid} href={p.knowledgeSrc} image={p.imgsrc} onLoad={this.handleImageLoad.bind(this)} header={p.title} meta={p.meta} description={p.description} color='yellow'>
-                                    </Card>
-                                ))
-                            }
-                        </Card.Group>
+                    <Card.Group centered>
+                        {
+                            Hobby.all().map(p => (
 
-                </div>
+                                <Card key={p.hid} href={p.knowledgeSrc} image={p.imgsrc} onLoad={this.handleImageLoad.bind(this)} header={p.title} meta={p.meta} description={p.description} color='yellow'>
+                                </Card>
+
+                            ))
+                        }
+                    </Card.Group>
+                </Dimmer.Dimmable>
+
+
                 </div>
 
         );

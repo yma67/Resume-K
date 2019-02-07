@@ -11,24 +11,26 @@ export default class Project extends Component {
     }
     render() {
         return(
-            <div>
-                <Dimmer active={this.state.load} inverted>
-                    <Loader inverted>Loading</Loader>
-                </Dimmer>
+            <div className={'Resume-Content'}>
                 <br />
-                <Header as='h3'>
+                <Header as='h2'>
                     <Icon name='chess king' />
                     <Header.Content>King of Following Groups</Header.Content>
                 </Header>
                 <br />
-                <Card.Group centered>
-                    {
-                        SingleProject.all().map(p => (
-                            <Card key={p.number} image={p.imgsrc} as={Link} onLoad={this.handleImageLoad.bind(this)} color='red' header={p.name} meta={p.dateRange} description={p.description} ui disabled loader to={`/project/${p.number}`}>
-                            </Card>
-                        ))
-                    }
-                </Card.Group>
+                <Dimmer.Dimmable as={Card.Group} blurring dimmed={this.state.load} >
+                    <Dimmer active={this.state.load} inverted>
+                        <Loader size='massive'>加载中</Loader>
+                    </Dimmer>
+                    <Card.Group centered>
+                        {
+                            SingleProject.all().map(p => (
+                                <Card key={p.number} image={p.imgsrc} as={Link} onLoad={this.handleImageLoad.bind(this)} color='red' header={p.name} meta={p.dateRange} description={p.description} ui disabled loader to={`/project/${p.number}`}>
+                                </Card>
+                            ))
+                        }
+                    </Card.Group>
+                </Dimmer.Dimmable>
             </div>
         );
     }

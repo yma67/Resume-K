@@ -25,6 +25,7 @@
   margin: 1% 8%;
 }
 .Resume-Content {
+  margin: 1% 16%;
   align-items: center;
 }
 .Readme-content {
@@ -34,8 +35,7 @@
   padding: 1%;
 }
 .Resume-Footer{
-  margin-top: 10%;
-  margin-bottom: 2%;
+  margin: 10% 16% 2%;
 }
 .App-link {
   color: #61dafb;
