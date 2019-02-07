@@ -18,6 +18,7 @@ export default class Project extends Component {
                     <Header.Content>King of Following Groups</Header.Content>
                 </Header>
                 <br />
+                <br />
                 <Dimmer.Dimmable as={Card.Group} blurring dimmed={this.state.load} >
                     <Dimmer active={this.state.load} inverted>
                         <Loader size='massive'>加载中</Loader>

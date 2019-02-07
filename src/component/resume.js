@@ -139,7 +139,7 @@ export class General extends Component {
                 <div className={'Resume-Footer'}>
                     <Divider horizontal footer className={'Resume-Footer'}>
                         <Header as='h4' >
-                            <code><Icon name='heart' color={'red'} />yma67 @t09</code>
+                            <code><Icon name='heart' color={'red'} />#苏州海浪科技股份有限公司</code>
                         </Header>
                     </Divider>
                 </div>
@@ -166,7 +166,11 @@ export default class Resume extends Component {
                         <Header.Content>Education</Header.Content>
                     </Header>
                     <br />
-
+                    <br />
+                <Dimmer.Dimmable as={Card.Group} blurring dimmed={this.state.load} >
+                    <Dimmer active={this.state.load} inverted>
+                        <Loader size='massive'>加载中</Loader>
+                    </Dimmer>
                     <Card.Group>
                         {
                             Education.all().map(p => (
@@ -187,11 +191,15 @@ export default class Resume extends Component {
                             ))
                         }
                     </Card.Group>
+                </Dimmer.Dimmable>
+
                     <br />
+                <br />
                     <Header as='h2'>
                         <Icon name='heart' />
                         <Header.Content>Like</Header.Content>
                     </Header>
+                <br />
                 <Dimmer.Dimmable as={Card.Group} blurring dimmed={this.state.load} >
                     <Dimmer active={this.state.load} inverted>
                         <Loader size='massive'>加载中</Loader>
