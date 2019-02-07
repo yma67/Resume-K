@@ -62,6 +62,7 @@ export class General extends Component {
         const { activeItem } = this.state;
         if (this.state.width/this.state.height < 0.62) {
             return (
+                <div>
                 <div className="Resume-header">
                     <header>
                         <Menu secondary size='massive'>
@@ -81,7 +82,9 @@ export class General extends Component {
                                 </Dropdown.Menu>
                             </Dropdown>
                         </Menu>
+                            <Divider />
                     </ header>
+                </div>
                     <ResumeRouter />
                     <div className={'Resume-Footer'}>
                         <Divider horizontal footer className={'Resume-Footer'}>
@@ -135,6 +138,9 @@ export class General extends Component {
                         </Menu>
                     </ header>
                 </div>
+                    <div className={'Resume-Divider'}>
+                        <Divider />
+                    </div>
                     <ResumeRouter />
                 <div className={'Resume-Footer'}>
                     <Divider horizontal footer className={'Resume-Footer'}>
@@ -159,7 +165,6 @@ export default class Resume extends Component {
     render() {
         return (
             <div className={'Resume-Content'} >
-                <Loader inverted>Loading</Loader>
                     <br />
                     <Header as='h2'>
                         <Icon name='book' />

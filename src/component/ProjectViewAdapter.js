@@ -37,37 +37,46 @@ class ProjectViewAdapter extends Component {
             return (
                     <div className="Resume-Content">
                         <br />
-                    <Header as='h2'>
-                        <Icon name='tag' />
-                        <Header.Content>{this.project.name}</Header.Content>
-                    </Header>
-                    <h5>
-                        {this.project.dateRange}
-                    </h5>
-                    <br />
-                    <Grid columns={1}>
-                        <Grid.Column>
-                            <Button as={Link} color={'red'} to={'/project'}>Back</Button>
-                            <Button color='blue' href={this.project.github}>
-                                <Icon name='github' /> GitHub
-                            </Button>
-                            <br />
-                            <Segment raised>
-                                <Label attached='top'>
-                                    <code>README.md</code>
-                                </Label>
-                                <br />
-                                <div className={'Readme-content'}>
-                                    <Dimmer active={this.state.load} inverted>
-                                        <Loader inverted>Loading</Loader>
-                                    </Dimmer>
-                                    <article>
-                                        <div class={'markdown-body'} dangerouslySetInnerHTML={{__html: md.render(this.state.terms)}} />
-                                    </article>
-                                </div>
-                            </Segment>
-                        </Grid.Column>
+                        <br />
+
+                    <Grid columns={2}>
+                            <Grid.Row>
+                                <Grid.Column>
+                                    <Header as='h2'>
+                                        <Icon name='tag' />
+                                        <Header.Content>{this.project.name}
+                                            <Header.Subheader>{this.project.dateRange}</Header.Subheader>
+                                        </Header.Content>
+                                    </Header>
+                                </Grid.Column>
+                                <Grid.Column>
+                                    <Button as={Link} color={'red'} to={'/project'} floated={'right'}>Back</Button>
+                                    <Button color='blue' href={this.project.github} floated={'right'}>
+                                        <Icon name='github' /> GitHub
+                                    </Button>
+                                </Grid.Column>
+                            </Grid.Row>
+                            <Grid.Row>
+                                <Grid.Column>
+                                </Grid.Column>
+                            </Grid.Row>
                     </Grid>
+                        <Segment raised>
+                            <Label attached='top'>
+                                <Icon name={'bookmark'}/>
+                                <code>README.md</code>
+                            </Label>
+                            <br/>
+                            <div className={'Readme-content'}>
+                                <Dimmer active={this.state.load} inverted>
+                                    <Loader inverted size={'massive'}>Loading</Loader>
+                                </Dimmer>
+                                <article>
+                                    <div className={'markdown-body'}
+                                         dangerouslySetInnerHTML={{__html: md.render(this.state.terms)}}/>
+                                </article>
+                            </div>
+                        </Segment>
                     </div>
             );
         }

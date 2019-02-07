@@ -38,6 +38,11 @@
   margin: 10% 16% 5%;
   align-items: center;
 }
+.Resume-Divider {
+  margin-left: 16%;
+  margin-right: 16%;
+  align-items: center;
+}
 .App-link {
   color: #61dafb;
 }
