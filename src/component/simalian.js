@@ -1,8 +1,7 @@
 import React, {Component} from 'react';
-import {Button, Dimmer, Header, Icon, Loader} from 'semantic-ui-react'
+import {Button, Dimmer, Header, Icon} from 'semantic-ui-react'
 import sml from "./sml.png";
 import {Link} from "react-router-dom";
-import ResumeRouter from "../ResumeRouter";
 import ProjectRouter from "../ProjectRouter";
 
 export default class Simalian extends Component{
@@ -30,11 +29,11 @@ export default class Simalian extends Component{
                     <img src={sml} className="App-logo" alt="logo" onLoad={this.handleImageLoad.bind(this)} />
                     <br />
                     <br />
-                    <Header as='h1' icon inverted>
+                    <Header as='h1' icon centered inverted>
                         {favoratesOfKing[rand(0, favoratesOfKing.length - 1)]}
                     </Header>
                     <br />
-                    <Button as={Link} inverted color={'black'} to={'/resume'}><code>bossli.io</code></Button>
+                    <Button as={Link} centered inverted color={'black'} to={'/resume'}><code>bossli.io</code></Button>
                     <ProjectRouter/>
                 </header>
             </div>

@@ -23,12 +23,14 @@ export default class Project extends Component {
                     <Dimmer active={this.state.load} inverted>
                         <Loader size='massive'>加载中</Loader>
                     </Dimmer>
+                    <Card.Group centered>
                         {
                             SingleProject.all().map(p => (
                                 <Card key={p.number} image={p.imgsrc} as={Link} onLoad={this.handleImageLoad.bind(this)} color='red' header={p.name} meta={p.dateRange} description={p.description} ui disabled loader to={`/project/${p.number}`}>
                                 </Card>
                             ))
                         }
+                    </Card.Group>
                 </Dimmer.Dimmable>
             </div>
         );
