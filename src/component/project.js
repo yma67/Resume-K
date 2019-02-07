@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {Menu, Card, Header, Icon, Label, Divider, Button, Loader, Dimmer} from 'semantic-ui-react';
+import {Menu, Card, Header, Icon, Label, Divider, Button, Loader, Dimmer, Image} from 'semantic-ui-react';
 import hand from "./hand.png";
 import SingleProject from '../model/SingleProject'
 import {Link} from "react-router-dom";
@@ -26,7 +26,19 @@ export default class Project extends Component {
                     <Card.Group centered>
                         {
                             SingleProject.all().map(p => (
-                                <Card key={p.number} image={p.imgsrc} as={Link} onLoad={this.handleImageLoad.bind(this)} color='red' header={p.name} meta={p.dateRange} description={p.description} ui disabled loader to={`/project/${p.number}`}>
+                                <Card key={p.number} as={Link} color='red' ui disabled loader to={`/project/${p.number}`}>
+                                    <Image src={p.imgsrc} onLoad={this.handleImageLoad.bind(this)}/>
+                                    <Card.Content>
+                                        <Card.Header>
+                                            {p.name}
+                                        </Card.Header>
+                                        <Card.Meta>
+                                            {p.dateRange}
+                                        </Card.Meta>
+                                        <Card.Description>
+                                            {p.description}
+                                        </Card.Description>
+                                    </Card.Content>
                                 </Card>
                             ))
                         }

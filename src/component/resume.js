@@ -209,10 +209,20 @@ export default class Resume extends Component {
                     <Card.Group centered>
                         {
                             Hobby.all().map(p => (
-
-                                <Card key={p.hid} href={p.knowledgeSrc} image={p.imgsrc} onLoad={this.handleImageLoad.bind(this)} header={p.title} meta={p.meta} description={p.description} color='yellow'>
+                                <Card key={p.hid} href={p.knowledgeSrc} color='yellow'>
+                                    <Image src={p.imgsrc} onLoad={this.handleImageLoad.bind(this)}/>
+                                    <Card.Content>
+                                        <Card.Header>
+                                            {p.title}
+                                        </Card.Header>
+                                        <Card.Meta>
+                                            {p.meta}
+                                        </Card.Meta>
+                                        <Card.Description>
+                                            {p.description}
+                                        </Card.Description>
+                                    </Card.Content>
                                 </Card>
-
                             ))
                         }
                     </Card.Group>
