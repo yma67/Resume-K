@@ -64,7 +64,7 @@ export class General extends Component {
             return (
                 <div className="Resume-header">
                     <header>
-                        <Menu secondary>
+                        <Menu secondary size='massive'>
                             <Menu.Item
                                 href={'/'}
                                 active={false}
@@ -97,7 +97,7 @@ export class General extends Component {
                 <div>
                 <div className="Resume-header">
                     <header>
-                        <Menu secondary>
+                        <Menu secondary size='massive'>
                             <Menu.Item
                                 href={'/'}
                                 active={false}

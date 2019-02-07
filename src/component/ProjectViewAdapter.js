@@ -1,6 +1,6 @@
 import React, {Component} from 'react'
 import SignleProject from '../model/SingleProject'
-import {Dimmer, Divider, Grid, Header, Icon, Loader, Menu, Placeholder, Segment} from "semantic-ui-react";
+import {Dimmer, Grid, Header, Icon, Loader, Segment} from "semantic-ui-react";
 import {Label, Button} from "semantic-ui-react";
 import '../github-markdown.css'
 import {Link} from "react-router-dom";
@@ -75,4 +75,4 @@ class ProjectViewAdapter extends Component {
     }
 }
 
-export default ProjectViewAdapter
+export default ProjectViewAdapter;

@@ -20,11 +20,11 @@ export default class work extends Component {
                 </Header>
                 <br />
                 <br />
-                <Dimmer.Dimmable as={Card.Group} blurring dimmed={this.state.load} >
+                <Dimmer.Dimmable as={Card.Group} blurring centered dimmed={this.state.load} >
                     <Dimmer active={this.state.load} inverted>
                         <Loader size='massive'>加载中</Loader>
                     </Dimmer>
-                    <Card.Group>
+                    <Card.Group centered>
                         {
                             Work.all().map(p => (
                                 <Card key={p.wid} color='red' fluid ui disabled loader>
