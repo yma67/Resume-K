@@ -190,7 +190,6 @@ export default class Resume extends Component {
                             ))
                         }
                 </Dimmer.Dimmable>
-
                     <br />
                 <br />
                     <Header as='h2'>
@@ -213,8 +212,6 @@ export default class Resume extends Component {
                         }
                     </Card.Group>
                 </Dimmer.Dimmable>
-
-
                 </div>
 
         );

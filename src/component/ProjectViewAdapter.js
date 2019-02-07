@@ -47,16 +47,16 @@ class ProjectViewAdapter extends Component {
                     <br />
                     <Grid columns={1}>
                         <Grid.Column>
+                            <Button as={Link} color={'red'} to={'/project'}>Back</Button>
+                            <Button color='blue' href={this.project.github}>
+                                <Icon name='github' /> GitHub
+                            </Button>
+                            <br />
                             <Segment raised>
-                                <Label as='a' color='blue' href={this.project.github} ribbon>
-                                    <code>GitHub <Icon name={'github'}/></code>
-                                </Label>
-                                <Button as={Link} floated='right' color={'red'} to={'/project'}>Back</Button>
-                                <br />
-                                <br />
-                                <Label as='a' color='red' ribbon>
+                                <Label attached='top'>
                                     <code>README.md</code>
                                 </Label>
+                                <br />
                                 <div className={'Readme-content'}>
                                     <Dimmer active={this.state.load} inverted>
                                         <Loader inverted>Loading</Loader>
