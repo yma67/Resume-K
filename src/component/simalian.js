@@ -30,9 +30,9 @@ export default class Simalian extends Component{
                     <img src={sml} className="App-logo" alt="logo" onLoad={this.handleImageLoad.bind(this)} />
                     <br />
                     <br />
-                    <p>
+                    <Header as='h1' icon inverted>
                         {favoratesOfKing[rand(0, favoratesOfKing.length - 1)]}
-                    </p>
+                    </Header>
                     <br />
                     <Button as={Link} inverted color={'black'} to={'/resume'}><code>bossli.io</code></Button>
                     <ProjectRouter/>
