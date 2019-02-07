@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {Card, Dimmer, Divider, Header, Icon, Image, Loader} from "semantic-ui-react";
+import {Card, Dimmer, Header, Icon, Image, Loader} from "semantic-ui-react";
 import Work from "../model/Work";
 
 export default class work extends Component {
