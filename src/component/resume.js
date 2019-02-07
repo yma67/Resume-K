@@ -171,7 +171,6 @@ export default class Resume extends Component {
                     <Dimmer active={this.state.load} inverted>
                         <Loader size='massive'>加载中</Loader>
                     </Dimmer>
-                    <Card.Group>
                         {
                             Education.all().map(p => (
                                 <Card key={p.eid} color='red' fluid ui disabled loader>
@@ -190,7 +189,6 @@ export default class Resume extends Component {
                                 </Card>
                             ))
                         }
-                    </Card.Group>
                 </Dimmer.Dimmable>
 
                     <br />
@@ -204,7 +202,6 @@ export default class Resume extends Component {
                     <Dimmer active={this.state.load} inverted>
                         <Loader size='massive'>加载中</Loader>
                     </Dimmer>
-
                     <Card.Group centered>
                         {
                             Hobby.all().map(p => (

@@ -19,18 +19,16 @@ export default class Project extends Component {
                 </Header>
                 <br />
                 <br />
-                <Dimmer.Dimmable as={Card.Group} blurring dimmed={this.state.load} >
+                <Dimmer.Dimmable as={Card.Group} blurring centered dimmed={this.state.load} >
                     <Dimmer active={this.state.load} inverted>
                         <Loader size='massive'>加载中</Loader>
                     </Dimmer>
-                    <Card.Group centered>
                         {
                             SingleProject.all().map(p => (
                                 <Card key={p.number} image={p.imgsrc} as={Link} onLoad={this.handleImageLoad.bind(this)} color='red' header={p.name} meta={p.dateRange} description={p.description} ui disabled loader to={`/project/${p.number}`}>
                                 </Card>
                             ))
                         }
-                    </Card.Group>
                 </Dimmer.Dimmable>
             </div>
         );
