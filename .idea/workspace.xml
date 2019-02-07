@@ -2,16 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a66ed075-44a1-477f-8e78-836c85a2bef3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/github-markdown.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/ProjectViewAdapter.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/ProjectViewAdapter.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/project.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/project.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/resume.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/resume.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/work.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/work.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/READMEbk.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/READMEbk.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/SingleProject.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/SingleProject.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/simalian.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/simalian.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -27,8 +18,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/component/project.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="59">
-              <caret line="20" column="83" selection-start-line="20" selection-start-column="33" selection-end-line="20" selection-end-column="83" />
+            <state relative-caret-position="241">
+              <caret line="27" column="120" selection-start-line="27" selection-start-column="80" selection-end-line="27" selection-end-column="120" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
               </folding>
@@ -36,13 +27,49 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/component/ProjectViewAdapter.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="242">
+            <state relative-caret-position="977">
               <caret line="62" column="45" selection-start-line="62" selection-start-column="45" selection-end-line="62" selection-end-column="45" />
               <folding>
                 <element signature="e#0#38#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/component/simalian.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="183">
+              <caret line="22" column="40" selection-start-line="22" selection-start-column="40" selection-end-line="22" selection-end-column="40" />
+              <folding>
+                <element signature="e#0#39#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/component/work.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="374">
+              <caret line="48" column="33" selection-start-line="48" selection-start-column="33" selection-end-line="48" selection-end-column="33" />
+              <folding>
+                <element signature="e#0#39#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/model/Work.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="134">
+              <caret line="7" column="124" selection-start-line="7" selection-start-column="124" selection-end-line="7" selection-end-column="124" />
+              <folding>
+                <element signature="e#0#39#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -73,15 +100,15 @@
         <option value="$PROJECT_DIR$/src/ProjectRouter.js" />
         <option value="$PROJECT_DIR$/src/ResumeRouter.js" />
         <option value="$PROJECT_DIR$/src/github-markdown.css" />
-        <option value="$PROJECT_DIR$/src/component/simalian.js" />
         <option value="$PROJECT_DIR$/src/router.js" />
         <option value="$PROJECT_DIR$/src/model/READMEbk.md" />
         <option value="$PROJECT_DIR$/src/model/SingleProject.js" />
-        <option value="$PROJECT_DIR$/src/component/work.js" />
         <option value="$PROJECT_DIR$/src/App.css" />
         <option value="$PROJECT_DIR$/src/component/resume.js" />
         <option value="$PROJECT_DIR$/src/component/project.js" />
         <option value="$PROJECT_DIR$/src/component/ProjectViewAdapter.js" />
+        <option value="$PROJECT_DIR$/src/component/work.js" />
+        <option value="$PROJECT_DIR$/src/component/simalian.js" />
       </list>
     </option>
   </component>
@@ -302,11 +329,18 @@
       <option name="project" value="LOCAL" />
       <updated>1549484036956</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="优化了页面切换">
+      <created>1549499563305</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1549499563305</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="65460000" />
+    <option name="totallyTimeSpent" value="66162000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-16" y="43" width="1406" height="825" extended-state="0" />
@@ -425,16 +459,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/Work.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="7" column="124" selection-start-line="7" selection-start-column="124" selection-end-line="7" selection-end-column="124" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="207">
@@ -523,16 +547,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/component/work.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="19" column="30" selection-start-line="19" selection-start-column="30" selection-end-line="19" selection-end-column="30" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/App.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="779">
@@ -560,16 +574,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/component/simalian.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="134">
-          <caret line="20" column="26" lean-forward="true" selection-start-line="20" selection-start-column="26" selection-end-line="20" selection-end-column="26" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/ResumeRouter.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
@@ -582,8 +586,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/component/project.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="59">
-          <caret line="20" column="83" selection-start-line="20" selection-start-column="33" selection-end-line="20" selection-end-column="83" />
+        <state relative-caret-position="241">
+          <caret line="27" column="120" selection-start-line="27" selection-start-column="80" selection-end-line="27" selection-end-column="120" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/component/work.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="48" column="33" selection-start-line="48" selection-start-column="33" selection-end-line="48" selection-end-column="33" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/Work.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="134">
+          <caret line="7" column="124" selection-start-line="7" selection-start-column="124" selection-end-line="7" selection-end-column="124" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
           </folding>
@@ -592,10 +616,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/component/ProjectViewAdapter.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
+        <state relative-caret-position="977">
           <caret line="62" column="45" selection-start-line="62" selection-start-column="45" selection-end-line="62" selection-end-column="45" />
           <folding>
             <element signature="e#0#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/component/simalian.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="183">
+          <caret line="22" column="40" selection-start-line="22" selection-start-column="40" selection-end-line="22" selection-end-column="40" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
           </folding>
         </state>
       </provider>

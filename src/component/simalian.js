@@ -1,11 +1,15 @@
 import React, {Component} from 'react';
-import { Button } from 'semantic-ui-react'
+import {Button, Dimmer, Header, Icon, Loader} from 'semantic-ui-react'
 import sml from "./sml.png";
 import {Link} from "react-router-dom";
 import ResumeRouter from "../ResumeRouter";
 import ProjectRouter from "../ProjectRouter";
 
 export default class Simalian extends Component{
+    state = { load: true };
+    handleImageLoad() {
+        this.setState({load: false});
+    }
     render() {
         let favoratesOfKing = ['村头烧烤', '可不敢', '太毒了', '稳啊', '高科技', '脸神', '闹呢'];
         let rand = (min, max) => {
@@ -16,7 +20,14 @@ export default class Simalian extends Component{
         return(
             <div className="App">
                 <header className="App-header">
-                    <img src={sml} className="App-logo" alt="logo" />
+                    <Dimmer active={this.state.load} page>
+                        <Header as='h2' icon inverted>
+                            <Icon name='smile' />
+                            川剧变脸
+                            <Header.Subheader>组皇职业照</Header.Subheader>
+                        </Header>
+                    </Dimmer>
+                    <img src={sml} className="App-logo" alt="logo" onLoad={this.handleImageLoad.bind(this)} />
                     <br />
                     <br />
                     <p>
