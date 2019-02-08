@@ -36,11 +36,11 @@ export default class work extends Component {
                                         </Header>
                                         <Label size={'tiny'} color='blue'>
                                             <Icon name='calendar alternate'/>
-                                            <Label.Detail size={'mini'}>{p.timeRange}</Label.Detail>
+                                            {p.timeRange}
                                         </Label>
                                         <Label size={'tiny'} color='red'>
                                             <Icon name='location arrow'/>
-                                            <Label.Detail size={'mini'}>{p.location}</Label.Detail>
+                                            {p.location}
                                         </Label>
                                     </Card.Content>
                                     <Card.Content>

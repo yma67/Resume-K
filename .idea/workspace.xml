@@ -2,56 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a66ed075-44a1-477f-8e78-836c85a2bef3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/img/McGill_University_CoA.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/img/adder.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/img/bloomberg-logo.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/img/future.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/img/hand.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/img/jx.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/img/lwf.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/img/ml.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/img/pxonic.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/img/resto.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/img/rideshareapp.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/img/ridesharedb.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/img/sk.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/img/sml.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/img/tz.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/img/wk1.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/img/wk2.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/img/ws.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/img/ztsx.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/model/project1_all_final_version/output_27_1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/model/project1_all_final_version/output_32_1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/model/project1_all_final_version/output_35_1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/model/project1_all_final_version/output_47_0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/model/project1_all_final_version/output_49_0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/model/project1_all_final_version/project1_all_final_version.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/McGill_University_CoA.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/ProjectViewAdapter.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/ProjectViewAdapter.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/adder.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/hand.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/jx.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/lwf.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/project.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/project.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/pxonic.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/resume.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/resume.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/rideshareapp.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/ridesharedb.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/simalian.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/simalian.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/sk.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/sml.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/tz.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/wk1.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/wk2.svg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/component/work.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/work.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/ws.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/ztsx.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/Education.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Education.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/Hobby.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Hobby.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/SingleProject.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/SingleProject.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/Work.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Work.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -67,7 +19,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/component/project.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-564">
+            <state relative-caret-position="46">
               <caret line="2" selection-start-line="2" selection-end-line="2" />
             </state>
           </provider>
@@ -76,8 +28,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/component/resume.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="386">
-              <caret line="195" column="51" lean-forward="true" selection-start-line="180" selection-start-column="36" selection-end-line="195" selection-end-column="51" />
+            <state relative-caret-position="4324">
+              <caret line="195" column="51" selection-start-line="180" selection-start-column="36" selection-end-line="195" selection-end-column="51" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
               </folding>
@@ -85,11 +37,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/component/work.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="428">
-              <caret line="28" column="83" selection-start-line="28" selection-start-column="83" selection-end-line="28" selection-end-column="83" />
+            <state relative-caret-position="401">
+              <caret line="38" column="57" selection-start-line="38" selection-start-column="57" selection-end-line="38" selection-end-column="57" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
               </folding>
@@ -121,7 +73,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/model/SingleProject.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="276">
+            <state relative-caret-position="115">
               <caret line="12" column="246" selection-start-line="12" selection-start-column="246" selection-end-line="12" selection-end-column="246" />
               <folding>
                 <element signature="e#0#42#0" expanded="true" />
@@ -130,11 +82,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/component/ProjectViewAdapter.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1474">
-              <caret line="69" column="63" selection-start-line="69" selection-start-column="63" selection-end-line="69" selection-end-column="63" />
+            <state relative-caret-position="1817">
+              <caret line="79" column="14" lean-forward="true" selection-start-line="79" selection-start-column="14" selection-end-line="79" selection-end-column="14" />
               <folding>
                 <element signature="e#0#38#0" expanded="true" />
               </folding>
@@ -173,9 +125,9 @@
         <option value="$PROJECT_DIR$/src/component/resume.js" />
         <option value="$PROJECT_DIR$/src/model/SingleProject.js" />
         <option value="$PROJECT_DIR$/src/model/Education.js" />
-        <option value="$PROJECT_DIR$/src/component/work.js" />
         <option value="$PROJECT_DIR$/src/model/Work.js" />
         <option value="$PROJECT_DIR$/src/component/ProjectViewAdapter.js" />
+        <option value="$PROJECT_DIR$/src/component/work.js" />
       </list>
     </option>
   </component>
@@ -286,7 +238,9 @@
       <workItem from="1549469529972" duration="8678000" />
       <workItem from="1549515185393" duration="1103000" />
       <workItem from="1549556223080" duration="5147000" />
-      <workItem from="1549574119257" duration="8042000" />
+      <workItem from="1549574119257" duration="8064000" />
+      <workItem from="1549588818997" duration="56000" />
+      <workItem from="1549595179130" duration="285000" />
     </task>
     <task id="LOCAL-00001" summary="礼物完成!!!">
       <created>1549389571440</created>
@@ -505,14 +459,22 @@
       <option name="project" value="LOCAL" />
       <updated>1549563984958</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="更新界面">
+      <created>1549588750456</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1549588750456</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="84472000" />
+    <option name="totallyTimeSpent" value="84835000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="22" y="23" width="1406" height="825" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24855492" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -618,12 +580,11 @@
     <MESSAGE value="添加下划线 优化页面" />
     <MESSAGE value="添加下划线 优化页面布局" />
     <MESSAGE value="优化了加载" />
-    <option name="LAST_COMMIT_MESSAGE" value="优化了加载" />
+    <MESSAGE value="更新界面" />
+    <option name="LAST_COMMIT_MESSAGE" value="更新界面" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/component/hand.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/component/hand.png" />
     <entry file="file://$PROJECT_DIR$/src/model/READMEwb.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -753,35 +714,38 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/component/project.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-564">
+        <state relative-caret-position="46">
           <caret line="2" selection-start-line="2" selection-end-line="2" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/component/resume.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="386">
-          <caret line="195" column="51" lean-forward="true" selection-start-line="180" selection-start-column="36" selection-end-line="195" selection-end-column="51" />
+        <state relative-caret-position="4324">
+          <caret line="195" column="51" selection-start-line="180" selection-start-column="36" selection-end-line="195" selection-end-column="51" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/component/work.js">
+    <entry file="file://$PROJECT_DIR$/src/model/SingleProject.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="428">
-          <caret line="28" column="83" selection-start-line="28" selection-start-column="83" selection-end-line="28" selection-end-column="83" />
+        <state relative-caret-position="115">
+          <caret line="12" column="246" selection-start-line="12" selection-start-column="246" selection-end-line="12" selection-end-column="246" />
           <folding>
-            <element signature="e#0#39#0" expanded="true" />
+            <element signature="e#0#42#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/Work.js">
+    <entry file="file://$PROJECT_DIR$/src/component/ProjectViewAdapter.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        <state relative-caret-position="1817">
+          <caret line="79" column="14" lean-forward="true" selection-start-line="79" selection-start-column="14" selection-end-line="79" selection-end-column="14" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -795,22 +759,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/SingleProject.js">
+    <entry file="file://$PROJECT_DIR$/src/model/Work.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="12" column="246" selection-start-line="12" selection-start-column="246" selection-end-line="12" selection-end-column="246" />
-          <folding>
-            <element signature="e#0#42#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="23">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/component/ProjectViewAdapter.js">
+    <entry file="file://$PROJECT_DIR$/src/component/work.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1474">
-          <caret line="69" column="63" selection-start-line="69" selection-start-column="63" selection-end-line="69" selection-end-column="63" />
+        <state relative-caret-position="401">
+          <caret line="38" column="57" selection-start-line="38" selection-start-column="57" selection-end-line="38" selection-end-column="57" />
           <folding>
-            <element signature="e#0#38#0" expanded="true" />
+            <element signature="e#0#39#0" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -187,11 +187,11 @@ export default class Resume extends Component {
                                         </Header>
                                         <Label size={'tiny'} color='blue'>
                                             <Icon name='calendar alternate'/>
-                                            <Label.Detail size={'mini'}>{p.dateRange}</Label.Detail>
+                                            {p.dateRange}
                                         </Label>
                                         <Label size={'tiny'} color='red'>
                                             <Icon name='location arrow'/>
-                                            <Label.Detail size={'mini'}>{p.location}</Label.Detail>
+                                            {p.location}
                                         </Label>
                                     </Card.Content>
                                     <Card.Content>
