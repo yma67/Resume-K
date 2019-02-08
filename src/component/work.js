@@ -1,7 +1,6 @@
 import React, {Component} from 'react';
-import {Card, Dimmer, Header, Icon, Image, Loader} from "semantic-ui-react";
+import {Card, Dimmer, Header, Icon, Image, Loader, Label} from "semantic-ui-react";
 import Work from "../model/Work";
-
 export default class work extends Component {
     constructor(props) {
         super(props);
@@ -28,11 +27,23 @@ export default class work extends Component {
                         {
                             Work.all().map(p => (
                                 <Card key={p.wid} color='red' fluid ui disabled loader>
+                                    <Card.Content header>
+                                        <Header as='h2'>
+                                            <Image size='mini' src={p.imgsrc} onLoad={this.handleImageLoad.bind(this)}/>
+                                            <Header.Content>{p.title}
+                                                <Header.Subheader>{p.institute}</Header.Subheader>
+                                            </Header.Content>
+                                        </Header>
+                                        <Label size={'tiny'} color='blue'>
+                                            <Icon name='calendar alternate'/>
+                                            <Label.Detail size={'mini'}>{p.timeRange}</Label.Detail>
+                                        </Label>
+                                        <Label size={'tiny'} color='red'>
+                                            <Icon name='location arrow'/>
+                                            <Label.Detail size={'mini'}>{p.location}</Label.Detail>
+                                        </Label>
+                                    </Card.Content>
                                     <Card.Content>
-                                        <Image floated='right' size='mini' onLoad={this.handleImageLoad.bind(this)} src={p.imgsrc} />
-                                        <Card.Header>{p.title}</Card.Header>
-                                        <Card.Meta>{p.institute} {p.timeRange}</Card.Meta>
-                                        <Card.Description>
                                             <Card.Description>
                                                 <ul>
                                                     {
@@ -42,7 +53,6 @@ export default class work extends Component {
                                                     }
                                                 </ul>
                                             </Card.Description>
-                                        </Card.Description>
                                     </Card.Content>
                                 </Card>
                             ))

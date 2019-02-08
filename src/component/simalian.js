@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import {Button, Dimmer, Header, Icon} from 'semantic-ui-react'
-import sml from "./sml.png";
+import sml from "../img/sml.png";
 import {Link} from "react-router-dom";
 import ProjectRouter from "../ProjectRouter";
 

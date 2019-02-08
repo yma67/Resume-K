@@ -1,9 +1,9 @@
 import React, {Component} from 'react';
 import Education from '../model/Education'
 import Hobby from '../model/Hobby'
-import {Menu, Card, Header, Icon, Image, Divider, Loader, Dimmer, Dropdown} from 'semantic-ui-react';
-import McGillIcon from './McGill_University_CoA.svg'
-import hand from './hand.png'
+import {Menu, Card, Header, Icon, Image, Divider, Loader, Dimmer, Dropdown, Label} from 'semantic-ui-react';
+import McGillIcon from '../img/McGill_University_CoA.svg'
+import hand from '../img/hand.png'
 import {Link} from "react-router-dom";
 import ResumeRouter from "../ResumeRouter";
 export class General extends Component {
@@ -38,7 +38,6 @@ export class General extends Component {
         this.setState({ width: window.innerWidth, height: window.innerHeight });
     }
 
-    handleItemClick = (e, { name }) => this.setState(name);
 
     getTab = () => {
         let urlPrev = this.props.location.pathname.slice(1);
@@ -178,16 +177,31 @@ export default class Resume extends Component {
                     </Dimmer>
                         {
                             Education.all().map(p => (
-                                <Card key={p.eid} color='red' fluid ui disabled loader>
+                                <Card key={p.eid} color='red' href={p.linkto} fluid ui disabled loader>
+                                    <Card.Content header>
+                                        <Header as='h2'>
+                                            <Image size='mini' src={p.imgsrc} />
+                                            <Header.Content>{p.degree}
+                                                <Header.Subheader>{p.institute}</Header.Subheader>
+                                            </Header.Content>
+                                        </Header>
+                                        <Label size={'tiny'} color='blue'>
+                                            <Icon name='calendar alternate'/>
+                                            <Label.Detail size={'mini'}>{p.dateRange}</Label.Detail>
+                                        </Label>
+                                        <Label size={'tiny'} color='red'>
+                                            <Icon name='location arrow'/>
+                                            <Label.Detail size={'mini'}>{p.location}</Label.Detail>
+                                        </Label>
+                                    </Card.Content>
                                     <Card.Content>
-                                        <Image floated='right' size='mini' src={McGillIcon} />
-                                        <Card.Header>{p.degree}</Card.Header>
-                                        <Card.Meta>{p.institute}</Card.Meta>
                                         <Card.Description>
                                             <ul>
-                                                <li>{p.grade}</li>
-                                                <li>{p.award}</li>
-                                                <li>{p.relCourse}</li>
+                                                {
+                                                    p.comment.map(s =>
+                                                        <li>{s}</li>
+                                                    )
+                                                }
                                             </ul>
                                         </Card.Description>
                                     </Card.Content>
@@ -228,7 +242,6 @@ export default class Resume extends Component {
                     </Card.Group>
                 </Dimmer.Dimmable>
                 </div>
-
         );
     }
 }

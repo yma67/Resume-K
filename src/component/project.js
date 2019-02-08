@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
 import {Menu, Card, Header, Icon, Label, Divider, Button, Loader, Dimmer, Image} from 'semantic-ui-react';
-import hand from "./hand.png";
 import SingleProject from '../model/SingleProject'
 import {Link} from "react-router-dom";
 export default class Project extends Component {

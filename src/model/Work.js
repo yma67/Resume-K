@@ -1,13 +1,8 @@
-import wk1 from '../component/wk1.svg'; 
-import wk2 from '../component/wk2.svg';
+import wk1 from '../img/wk1.svg';
 const Work = {
-
     workPersistence: [
-        {wid: 0, title: "CTO兼任首席研发王", institute: "邻居家研究所", timeRange: "June 2017", relSkill:["Software Engineering", "Electrical Engineering", "Design", "Engineering Project Management"], imgsrc: wk1},
-        {wid: 1, title: "交易王", institute: "邻居家券商", timeRange: "June 2018", relSkill:["Applied Financial Investment", "期货交易"], imgsrc: wk2},
-        {wid: 2, title: "机器学习量化交易王", institute: "德国某大学", timeRange: "June 2019", relSkill:["应用强化学习多赚了20%的钱", "量化交易策略辅助强化学习算法"], imgsrc: wk1},
-        {wid: 2, title: "软件需求工程王", institute: "McGill University", timeRange: "June 2018 - ongoing", relSkill:["Applied Financial Investment", "期货交易"], imgsrc: wk2}
-
+        {wid: 0, title: "Operations Intern, Private Equity Division", institute: "Zhongtai Securities Co., Ltd.", timeRange: "June 2018 - Aug 2018", location: "Jinan, Shandong China", relSkill:["Collected data from financial data platforms, research reports and financial statements to create charts and forms for company valuation", "Used Excel to categorize and index more than 300 documents, making information search efficient ", "Communicated effectively with other departments, organized meetings and followed up project execution "], imgsrc: wk1},
+        {wid: 1, title: "Development Intern, R&D Department", institute: "ZhengChen Inc. ", timeRange: "June 2018, Shandong China", location: "Jinan, Shandong China", relSkill:["ZhengChen Inc. is an innovative artificial intelligence and energy-efficient solutions company"], imgsrc: wk1}
     ],
     all: function () { return this.workPersistence},
     get: function (id) {

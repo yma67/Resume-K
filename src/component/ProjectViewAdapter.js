@@ -1,6 +1,6 @@
 import React, {Component} from 'react'
 import SignleProject from '../model/SingleProject'
-import {Dimmer, Grid, Header, Icon, Loader, Segment} from "semantic-ui-react";
+import {Dimmer, Grid, Header, Icon, Loader, Placeholder, Segment} from "semantic-ui-react";
 import {Label, Button} from "semantic-ui-react";
 import '../github-markdown.css'
 import {Link} from "react-router-dom";
@@ -38,7 +38,6 @@ class ProjectViewAdapter extends Component {
                     <div className="Resume-Content">
                         <br />
                         <br />
-
                     <Grid columns={2}>
                             <Grid.Row>
                                 <Grid.Column>
