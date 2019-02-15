@@ -13,8 +13,8 @@ export default class Project extends Component {
             <div className={'Resume-Content'}>
                 <br />
                 <Header as='h2'>
-                    <Icon name='chess king' />
-                    <Header.Content>King of Following Groups</Header.Content>
+                    <Icon name='paint brush' />
+                    <Header.Content>Project</Header.Content>
                 </Header>
                 <br />
                 <br />

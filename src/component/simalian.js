@@ -8,7 +8,7 @@ import lwf from "../img/lwfetlw.png"
 export default class Simalian extends Component{
     constructor(props) {
         super(props);
-        this.favoratesOfKing = ['村头烧烤', '可不敢', '太毒了', '稳啊', '高科技', '脸神', '闹呢', '跟着学学', '写method', '笛哥', '笛王', '马校长', '新技术', '太强了', 'Gunter是SE最好的教授'];
+        this.favoratesOfKing = ['Word是世界上使用人数最多的编译器 还是NLP', 'PPT是世界上使用人数最多的前端框架', 'Excel是世界上使用人数最多的数据库', '村头烧烤', '可不敢', '太毒了', '稳啊', '高科技', '脸神', '闹呢', '跟着学学', '写method', '笛哥', '笛王', '马校长', '新技术', '太强了', 'Gunter是SE最好的教授'];
         this.state = { load: true,  text: this.favoratesOfKing[this.rand(0, this.favoratesOfKing.length - 1)]};
     }
     // {this.state.text}
@@ -36,11 +36,11 @@ export default class Simalian extends Component{
                             <Header.Subheader>组皇职业照</Header.Subheader>
                         </Header>
                     </Dimmer>
-                    <img src={lwf} alt="logo" onLoad={this.handleImageLoad.bind(this)} />
+                    <img src={sml} alt="logo" className="App-logo" onLoad={this.handleImageLoad.bind(this)} />
                     <br />
                     <br />
                     <Header as='h1' icon centered inverted onClick={this.handleRandomOnClick.bind(this)}>
-                        恭祝老王和老王妃情人节快乐
+                        {this.state.text}
                     </Header>
                     <br />
                     <Button as={Link} size={'huge'} centered inverted color={'standard'} to={'/resume'}><code>bossli.io</code></Button>
