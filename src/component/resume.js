@@ -177,7 +177,7 @@ export default class Resume extends Component {
                     </Dimmer>
                         {
                             Education.all().map(p => (
-                                <Card key={p.eid} color='pink' href={p.linkto} fluid ui disabled loader>
+                                <Card key={p.eid} color='red' href={p.linkto} fluid ui disabled loader>
                                     <Card.Content header>
                                         <Header as='h2'>
                                             <Image size='mini' src={p.imgsrc} />
@@ -223,7 +223,7 @@ export default class Resume extends Component {
                     <Card.Group centered>
                         {
                             Hobby.all().map(p => (
-                                <Card key={p.hid} href={p.knowledgeSrc} color='yellow'>
+                                <Card key={p.hid} href={p.knowledgeSrc} color='red'>
                                     <Image src={p.imgsrc} onLoad={this.handleImageLoad.bind(this)}/>
                                     <Card.Content>
                                         <Card.Header>
