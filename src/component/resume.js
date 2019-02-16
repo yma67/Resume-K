@@ -88,7 +88,7 @@ export class General extends Component {
                     <div className={'Resume-Footer'}>
                         <Divider horizontal footer className={'Resume-Footer'}>
                             <Header as='h4' >
-                                <code><Icon name='heart' color={'red'} />#苏州海浪科技股份有限公司</code>
+                                <code><Icon name='heart' color={'red'} />#李昕宇工作室</code>
                             </Header>
                         </Divider>
                     </div>
@@ -144,7 +144,7 @@ export class General extends Component {
                 <div className={'Resume-Footer'}>
                     <Divider horizontal footer className={'Resume-Footer'}>
                         <Header as='h4' >
-                            <code><Icon name='heart' color={'red'} />#苏州海浪科技股份有限公司</code>
+                            <code><Icon name='heart' color={'red'} />#李昕宇工作室</code>
                         </Header>
                     </Divider>
                 </div>
