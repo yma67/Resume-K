@@ -5,6 +5,17 @@ import {Link} from "react-router-dom";
 import ProjectRouter from "../ProjectRouter";
 import lwf from "../img/lwfetlw.png"
 
+const Emoji = props => (
+    <span
+        className="emoji"
+        role="img"
+        aria-label={props.label ? props.label : ""}
+        aria-hidden={props.label ? "false" : "true"}
+    >
+        {props.symbol}
+    </span>
+);
+
 export default class Simalian extends Component{
     constructor(props) {
         super(props);
@@ -41,6 +52,9 @@ export default class Simalian extends Component{
                     <br />
                     <Header as='h1' icon centered inverted onClick={this.handleRandomOnClick.bind(this)}>
                         {this.state.text}
+                    </Header>
+                    <Header as='h2' icon centered inverted>
+                        热烈祝贺我们伟大的组皇去德国点片儿 <Emoji symbol="🎉"/>
                     </Header>
                     <br />
                     <Button as={Link} size={'huge'} centered inverted color={'standard'} to={'/resume'}><code>bossli.io</code></Button>
