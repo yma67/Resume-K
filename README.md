@@ -1,6 +1,19 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-# Website for Director Boss Li (chrisliii)
+# Website for Director Boss Li (chrisliii) using React
+
+## Use of this as a template
+### Resume Content
+Modify 'src/model/'
+
+- Education as Education.js
+- Project Items as SingleProject.js
+- Hobbies as Hobby.js
+- Work Experience as Work.js
+
+everything is as formatted
+### Images and SVGs
+Reference them in 'src/img/' to keep the project structured and clean
 
 ## Available Scripts
 
